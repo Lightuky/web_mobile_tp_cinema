@@ -14,7 +14,7 @@ export class MovieService {
     return this.http.get<any>(`${env.apiUrl}/search/movie?api_key=${env.apiKey}&language=en_US&query=${queryString}&page=1&include_adult=false`, {
       'headers': new HttpHeaders({
         'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Origin': 'https://ynov-m2-tp-cinema.herokuapp.com/',
       })
     });
   }
